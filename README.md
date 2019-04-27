@@ -37,26 +37,39 @@ Although previous work proved the significant social network spreading effect on
 
 ## 3. Research Idea
 
+Twitter volume indicates the global total discussion trends and interests on Twitter, and the Google Trends measures the query frequency and statistics of certain key words within one period by analyzing global searching behaviors. This report aims to quantify the long-term relationship between Internet social media trends, namely Twitter Volume and Google Trends of Bitcoin, and the Bitcoin price. In this case, this report attempts to provide a way for predicting Bitcoin price under the context of Internet social media information interaction in the long run.
 
+## 4. Data
 
-Twitter volume indicates the global discussion trends and interests on Twitter, and the Google Trends measures the query frequency and statistics of certain key words within one period by analyzing global searching behaviors. This report aims to quantify the long-term relationship between Internet social media trends, namely Twitter Volume and Google Trends of Bitcoin, and the Bitcoin price. 
+This report collects data set range from Janurary 2015 to April 2019. 
 
-In this case, this report attempts to provide a way for predicting Bitcoin price under the context of Internet social media information interaction in the long run.
+### 4.1 Bitcoin Price
 
+The Bitcoin price data is obtained from coinmarket.com, from 1st Jan 2015 to 1st Apr 2019. It could be seen that the Bitcoin price continuously increased from Jan 2017 to Dec 2017, reaching the highest point at USD 19497.4 on 16th Dec 2017. After that, jumped off nearly half of the price within 2 months to USD 6955 on 5th Feb 2018, and kept fluctuating in a downward trend since then.
+
+#### Bitcoin Price 2015-2019
 
 ![bitcoin price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/bitcoin%20price.png)
 (Data source: [coinmarketcap.com](https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20150101&end=20190425))
 
+### 4.2 Twitter volume
+
+The Twitter volume index is accessed from Bloomberg in topic search by key word ‘Bitcoin’. This report collects both daily and weekly Twitter volume data from 2th Jan 2015 to 24th Apr 2019.
+
+#### Daily Twitter Volume on Bitcoin Topic
 ![twitter-volume-daily](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-daily.png)
 (Data source: Bloomberg L.P.-Twitter volume-topic-Bitcoin)
 
+#### Daily Twitter Volumn on Bitcoin Topic and Bitcoin Price
 ![Daily Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Daily%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
 
 
+#### Weekly Twitter Volume on Bitcoin Topic
 
 ![twitter-volume-weekly](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-weekly.png)
 (Data source: Bloomberg L.P.-Twitter volume-topic-Bitcoin)
 
+#### Weekly Twitter Volume on Bitcoin Topic and Bitcoin Price
 ![Weekly Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Weekly%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
 
 
