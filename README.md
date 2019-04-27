@@ -1,5 +1,5 @@
 
-# An empirical analysis to quantify the long-term relationship between Google Trends, Twitter Volume and Bitcoin Price
+# An empirical analysis to quantify the long-term relationship between Google Trends, Twitter and Bitcoin Price
 
 
 ## 1. Background Introduction
@@ -29,7 +29,7 @@ Google, the world's largest search engine company, has reached 1 billion users i
 
 ## 2. Literature Review
 
-Consequently, the network effect of giant social media platforms provide a valuable channel for prediction in various fields, for example, Shi (2012) used Twitter volume to predict US primary elections, Ranco (2015) utilized Twitter to predict stocks returns, and Dergiades (2018) also estimated tourists’ arrivals statistics using Google Trends. 
+Consequently, the network effect of giant social media platforms provide a valuable channel for prediction in various fields, for example, Shi (2012) used Twitter Volume to predict US primary elections, Ranco (2015) utilized Twitter to predict stocks returns, and Dergiades (2018) also estimated tourists’ arrivals statistics using Google Trends. 
 
 However, previous studies that analyzed relationships between digital currency price and web search and discussion indexes are rather limited. Kristoufek (2013) studied the relationship of Bitcoin and search query frequency on Google Trends and also Wikipedia, using series data from May 2011 to June 2013, finding that the increased interest in the Bitcoin currency measured by the searched terms increases its price. Matta (2015) explored the effect of sentiment analysis of tweets related to Bitcoin and its price between January 2015 and March 2015, and suggested that positive tweets may contribute to predict the movement of Bitcoin’s price in a few days.
 
@@ -38,7 +38,7 @@ Although previous work proved the significant social network spreading effect on
 
 ## 3. Research Idea
 
-Twitter volume indicates the global total discussion trends and interests on Twitter, and the Google Trends measures the query frequency and statistics of certain key words within one period by analyzing global searching behaviors. This report aims to quantify the long-term relationship between Internet social media trends, namely Twitter Volume and Google Trends of Bitcoin, and the Bitcoin price. In this case, this report attempts to provide a way for predicting Bitcoin price under the context of Internet social media information interaction in the long run.
+Twitter Volume indicates the global total discussion trends and interests on Twitter, and the Google Trends measures the query frequency and statistics of certain key words within one period by analyzing global searching behaviors. This report aims to quantify the long-term relationship between Internet social media trends, namely Twitter Volume and Google Trends of Bitcoin, and the Bitcoin price. In this case, this report attempts to provide a way for predicting Bitcoin price under the context of Internet social media information interaction in the long run.
 
 ## 4. Data
 
@@ -51,23 +51,23 @@ The Bitcoin price data is obtained from coinmarket.com, from 1st Jan 2015 to 1st
 ![bitcoin price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/bitcoin%20price.png)
 (Data source: [coinmarketcap.com](https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20150101&end=20190425))
 
-### 4.2 Twitter volume
+### 4.2 Twitter Volume
 
-The Twitter volume index is accessed from Bloomberg in topic search by key word ‘Bitcoin’. This report collects both daily and weekly Twitter volume data from 2th Jan 2015 to 24th Apr 2019.
+The Twitter Volume index is accessed from Bloomberg in topic search by key word ‘Bitcoin’. This report collects both daily and weekly Twitter Volume data from 2th Jan 2015 to 24th Apr 2019.
 
 #### Daily Twitter Volume on Bitcoin Topic
 
-![twitter-volume-daily](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-daily.png)
-(Data source: Bloomberg L.P.-Twitter volume-topic-Bitcoin)
+![twitter-Volume-daily](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-Volume-daily.png)
+(Data source: Bloomberg L.P.-Twitter Volume-topic-Bitcoin)
 
 #### Weekly Twitter Volume on Bitcoin Topic
 
-![twitter-volume-weekly](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-weekly.png)
-(Data source: Bloomberg L.P.-Twitter volume-topic-Bitcoin)
+![twitter-Volume-weekly](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-Volume-weekly.png)
+(Data source: Bloomberg L.P.-Twitter Volume-topic-Bitcoin)
 
 ### 4.3 Google Trends
 
-Google Trends measures the heat of the specified content in the current period through the statistics of keyword search volume over a period of time. Hence, Google Trends can quantify the topic search volume and fully reflect the most interesting topics around the world. This report collects the Google Trends data on key word 'Bitcoin' in a global range from Jan 4th 2015 to 21th Apr 2019.
+Google Trends measures the heat of the specified content in the current period through the statistics of keyword search Volume over a period of time. Hence, Google Trends can quantify the topic search Volume and fully reflect the most interesting topics around the world. This report collects the Google Trends data on key word 'Bitcoin' in a global range from Jan 4th 2015 to 21th Apr 2019.
 
 ![google trends](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/google%20trends.png)
 (Data source: [Google Trends](https://trends.google.com/trends/explore?q=bitcoin&geo=US))
@@ -130,9 +130,48 @@ To minimize the effect of collinearity when estimating the regression model, “
 
 ![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/CORR2.png)
 
-From Figures above, it is obvious that both of the mean and volatility of “Google Trends” and “Twitter-weekly data” are highly correlated. Thus, this report will construct two regression models that includes one independent variable each time to minimize the impact of collinearity. 
+From the time series plots and cross-correlation result above, “Google Trends” and “Twitter-weekly data” are highly correlated. Thus, this report will construct two regression models that includes one independent variable each time to minimize the impact of collinearity. 
 
 ### 5.3 Regression Results
+
+After the processing of data and the test of stationary, this report uses OLS model to study the impact of Google Trends and Twitter Volume on the price of Bitcoin. Two models are constructed as follows:
+
+(1) Price t = β0 + β1 * Google Trends t + e
+
+(2) Price t = β0' + β1' * Google Trends t + e'
+
+#### 1) Regression of Google Trends on Price
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/regression%20google.png)
+
+The regression results show that Google Trends has a significant and positive coefficient of 0.750459, which means increase of GOOGLE will result in increase of the price of Bitcoin. Besides, Adjusted R-square of the regression is 0.5813, which shows the 58% of the dependent variable can be reasonably explained by Google Trends.
+
+#### 2) Regression of Twitter Volume on Price
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/regression%20twitter.png)
+
+Regression results show that Twitter also has a positive coefficient of 0.750459 and it is statistically significant, which means increase of Twitter Volume will result increase of the price of Bitcoin. Besides, Adjusted R-square of the regression is 0.5823 here, indicating that 8% of the dependent variable can be explained by the Twitter Volume.
+
+### 5.4 Heteroscedasticity Test
+
+This part will test whether the residual of regression models has the characteristics of homoscedasticity. The test of heteroscedasticity is to ensure that the regression parameter estimator has good statistical properties. If the linear regression model has heteroscedasticity, the traditional least squares method is used to estimate the model, and the obtained parameter estimator is not a valid estimator, or even an asymptotically effective estimator. Under this circumstance, it is impossible to significantly compare the model parameters. And this report use the White test and Breusch-Pagan-Godfrey test and judge whether the residual has homoscedasticity and our estimators are valid.
+
+#### (1) Heteroscedasticity test on model (1)
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Heteroscedasticity%20test%20google.png)
+
+Table 5 shows the result of heteroskedasticity test results on e. The p value of F-statistics and Chi-square statistics are 0.0923, 0.0836 and 0.1522 respectively, they are all larger than 0.05, which means the residual of our regression model obey the homoscedasticity. The result of Breusch-Pagan-Godfrey Test suggests similar result. The p value of F-statistics and Chi-square statistics are all larger than 0.05, which is consistent with White test. Therefore, the residual of this model follows the homoscedasticity and the regression model (1) is valid.
+
+#### (2) Heteroscedasticity test on model (2)
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Heteroscedasticity%20test%20twitter.png)
+
+According to the result of White test in Table 6, p value of F-statistics and Chi-square statistics are larger than 0.05, which means the residual of our regression model obey the homoscedasticity. The result of Breusch-Pagan-Godfrey Test shows similar result. The p value of F-statistics and Chi-square statistics are all larger than 0.05, which is consistent with White test. It can be concluded that the residual of model (2) also follows the homoscedasticity. 
+
+
+
+
+
 
 
 
