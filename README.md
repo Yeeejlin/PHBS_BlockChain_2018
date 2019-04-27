@@ -59,8 +59,6 @@ The Twitter volume index is accessed from Bloomberg in topic search by key word 
 ![twitter-volume-daily](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-daily.png)
 (Data source: Bloomberg L.P.-Twitter volume-topic-Bitcoin)
 
-![Daily Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Daily%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
-
 #### Weekly Twitter Volume on Bitcoin Topic
 
 ![twitter-volume-weekly](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-weekly.png)
@@ -75,20 +73,28 @@ Google Trends measures the heat of the specified content in the current period t
 ![google trends](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/google%20trends.png)
 (Data source: [Google Trends](https://trends.google.com/trends/explore?q=bitcoin&geo=US))
 
-![Weekly Bitcoin Google Trends and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Weekly%20Bitcoin%20Google%20Trends%20and%20Price.png)
-
 ### 4.4 Data Z-Score Standardization
 
 Due to the gap between different variable dimensions, this report standardizes all data in order to improve data comparability and analysis accuracy. 
 
-#### Z-Score
-
 The main purpose of Z-Score is to transform data of different ranges into the same range, and to measure it with the calculated Z-Score value in order to ensure the comparability of data.
+
 Before standardizing the Z-Score data, it is needed to get the following information:
+
 1) The mean of the total data (μ)
 2) Standard deviation of total data (σ)
 3) Individual observations (x)
+
 Z-Score = (x-μ)/σ
+
+Then the standardized variables comparisons are as follows:
+
+![Daily Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Daily%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
+
+![Daily Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Daily%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
+
+![Weekly Bitcoin Google Trends and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Weekly%20Bitcoin%20Google%20Trends%20and%20Price.png)
+
 
 ## 5. Data Analysis
 
