@@ -103,14 +103,37 @@ Since time series data is used to do the regression, the times series data must 
 
 #### (1) Stationary Test on Google Trends
 
-Figure below shows the autocorrelations of Google Trends seem to be statistically significant at every lag level from lag 1 to lag 6. Based on the figures above, we make a preliminary hypothesis that “GOOGLE” time series are not stationary. 
+Figure below shows the autocorrelations of Google Trends seem to be statistically significant at every lag level from lag 1 to lag 6. Based on this, this report makes a preliminary hypothesis that “Google Trends” time series are not stationary. 
 
 ![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/stationary%20test%20on%20google.png)
 
-Next, ADF test is adopted to verify the hypothesis above. The null hypothesis of ADF test is  : 
+Next, ADF test is adopted to verify the hypothesis above. The null hypothesis of ADF test is H0: 
 There is unit root in “Google Trends” ADF test. If we cannot reject the null hypothesis, “Google Trends” is a non-stationary time series. Here is the ADF test results: 
 
 ![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/unit%20root%20google.png)
+
+From the results above, although the graph is not a classic stationary process, the ADF test proves that the t-statistics value is smaller than the 5% level critical values, so the series “Google Trends” is a stationary process at 5% level.
+
+#### (2) Stationary Test on Twitter 
+
+The autocorrelations of “Twitter-Weekly” seems to be statistically significant at every lag level from lag 1 to lag 6. Similarly, autocorrelation plot with ADF test is also shown in Table 2. The results suggest that t-statistics has a value of -3.257828 smaller than 5% level, indicating that the Null Hypothesis should be rejected and the Twitter weekly data is stationary. By using the same methodology, it is found that “Twitter-daily” data is also stationary. 
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/stationary%20test%20on%20twitter.png)
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/unit%20root%20twitter.png)
+
+### 5.2 Cross-Correlation Test
+
+To minimize the effect of collinearity when estimating the regression model, “Google Trends” and “Twitter”, as two independent variables, should be tested for cross-correlation test. If these two independent variables are highly-correlated, a valid Instrument variable measurement should be found or test the impact of each independent variables by constructing several linear regression models with one variable. 
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/CORR1.png)
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/CORR2.png)
+
+From Figures above, it is obvious that both of the mean and volatility of “Google Trends” and “Twitter-weekly data” are highly correlated. Thus, this report will construct two regression models that includes one independent variable each time to minimize the impact of collinearity. 
+
+### 5.3 Regression Results
+
 
 
 
