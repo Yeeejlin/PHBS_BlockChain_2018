@@ -24,6 +24,7 @@ With the popularization of Web media, the Internet is not only a platform to dis
 Google, the world's largest search engine company, has reached 1 billion users in 2017, which is one quarter of the total global Netizen (Popper, 2017). Besides, Twitter is one of the most popular social networks worldwide. Part of the appeal is the ability of users to follow any other user with a public profile, enabling users to interact with celebrities who regularly post on the social media site. The Twitter micro-blogging service averaged at 321 million monthly active users at the end of 2018, accounting for 11% of the total world Netizen (Statista, 2019).
 
 ![twitter user](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter%20user.png)
+
 (Data source: https://www.statista.com/statistics/282087/number-of-monthly-active-twitter-users/)
 
 ## 2. Literature Review
@@ -64,8 +65,6 @@ The Twitter volume index is accessed from Bloomberg in topic search by key word 
 ![twitter-volume-weekly](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-weekly.png)
 (Data source: Bloomberg L.P.-Twitter volume-topic-Bitcoin)
 
-![Weekly Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Weekly%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
-
 ### 4.3 Google Trends
 
 Google Trends measures the heat of the specified content in the current period through the statistics of keyword search volume over a period of time. Hence, Google Trends can quantify the topic search volume and fully reflect the most interesting topics around the world. This report collects the Google Trends data on key word 'Bitcoin' in a global range from Jan 4th 2015 to 21th Apr 2019.
@@ -91,7 +90,7 @@ Then the standardized variables comparisons are as follows:
 
 ![Daily Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Daily%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
 
-![Daily Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Daily%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
+![Weekly Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Weekly%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
 
 ![Weekly Bitcoin Google Trends and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Weekly%20Bitcoin%20Google%20Trends%20and%20Price.png)
 
