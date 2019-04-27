@@ -97,3 +97,20 @@ Then the standardized variables comparisons are as follows:
 
 ## 5. Data Analysis
 
+### 5.1 Stationary Test
+
+Since time series data is used to do the regression, the times series data must satisfy the requirement of stationary process. To get a rough inference on the stationary hypothesis, this report draws the time series plot and ACF figures about SCI.
+
+#### (1) Stationary Test on Google Trends
+
+Figure below shows the autocorrelations of Google Trends seem to be statistically significant at every lag level from lag 1 to lag 6. Based on the figures above, we make a preliminary hypothesis that “GOOGLE” time series are not stationary. 
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/stationary%20test%20on%20google.png)
+
+Next, ADF test is adopted to verify the hypothesis above. The null hypothesis of ADF test is  : 
+There is unit root in “Google Trends” ADF test. If we cannot reject the null hypothesis, “Google Trends” is a non-stationary time series. Here is the ADF test results: 
+
+![1](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/unit%20root%20google.png)
+
+
+
