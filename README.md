@@ -47,8 +47,6 @@ This report collects data set range from Janurary 2015 to April 2019.
 
 The Bitcoin price data is obtained from coinmarket.com, from 1st Jan 2015 to 1st Apr 2019. It could be seen that the Bitcoin price continuously increased from Jan 2017 to Dec 2017, reaching the highest point at USD 19497.4 on 16th Dec 2017. After that, jumped off nearly half of the price within 2 months to USD 6955 on 5th Feb 2018, and kept fluctuating in a downward trend since then.
 
-#### Bitcoin Price 2015-2019
-
 ![bitcoin price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/bitcoin%20price.png)
 (Data source: [coinmarketcap.com](https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20150101&end=20190425))
 
@@ -57,26 +55,40 @@ The Bitcoin price data is obtained from coinmarket.com, from 1st Jan 2015 to 1st
 The Twitter volume index is accessed from Bloomberg in topic search by key word ‘Bitcoin’. This report collects both daily and weekly Twitter volume data from 2th Jan 2015 to 24th Apr 2019.
 
 #### Daily Twitter Volume on Bitcoin Topic
+
 ![twitter-volume-daily](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-daily.png)
 (Data source: Bloomberg L.P.-Twitter volume-topic-Bitcoin)
 
-#### Daily Twitter Volumn on Bitcoin Topic and Bitcoin Price
 ![Daily Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Daily%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
-
 
 #### Weekly Twitter Volume on Bitcoin Topic
 
 ![twitter-volume-weekly](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-weekly.png)
 (Data source: Bloomberg L.P.-Twitter volume-topic-Bitcoin)
 
-#### Weekly Twitter Volume on Bitcoin Topic and Bitcoin Price
 ![Weekly Bitcoin Twitter Volume and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Weekly%20Bitcoin%20Twitter%20Volume%20and%20Price.png)
 
+### 4.3 Google Trends
+
+Google Trends measures the heat of the specified content in the current period through the statistics of keyword search volume over a period of time. Hence, Google Trends can quantify the topic search volume and fully reflect the most interesting topics around the world. This report collects the Google Trends data on key word 'Bitcoin' in a global range from Jan 4th 2015 to 21th Apr 2019.
 
 ![google trends](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/google%20trends.png)
 (Data source: [Google Trends](https://trends.google.com/trends/explore?q=bitcoin&geo=US))
 
 ![Weekly Bitcoin Google Trends and Price](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/Weekly%20Bitcoin%20Google%20Trends%20and%20Price.png)
 
+### 4.4 Data Z-Score Standardization
 
+Due to the gap between different variable dimensions, this report standardizes all data in order to improve data comparability and analysis accuracy. 
+
+#### Z-Score
+
+The main purpose of Z-Score is to transform data of different ranges into the same range, and to measure it with the calculated Z-Score value in order to ensure the comparability of data.
+Before standardizing the Z-Score data, it is needed to get the following information:
+1) The mean of the total data (μ)
+2) Standard deviation of total data (σ)
+3) Individual observations (x)
+Z-Score = (x-μ)/σ
+
+## 5. Data Analysis
 
