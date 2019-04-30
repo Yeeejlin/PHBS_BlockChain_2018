@@ -182,7 +182,7 @@ Matta, M., Lunesu, I., & Marchesi, M. (2015, June). Bitcoin Spread Prediction Us
 
 Ranco, G., Aleksovski, D., Caldarelli, G., Grčar, M., & Mozetič, I. (2015). The effects of Twitter sentiment on stock price returns. PloS one, 10(9), e0138441.
 
-Shi, L., Agarwal, N., Agrawal, A., Garg, R., & Spoelstra, J. (2012). Predicting US primary elections with Twitter. Retrieved from:  http://snap. stanford. edu/social2012/papers/shi. pdf.
+Shi, L., Agarwal, N., Agrawal, A., Garg, R., & Spoelstra, J. (2012). Predicting US primary elections with Twitter. Retrieved from:  http://snap.stanford.edu/social2012/papers/shi.pdf.
 
 
 
