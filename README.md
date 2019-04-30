@@ -57,7 +57,7 @@ The Twitter Volume index is accessed from Bloomberg in topic search by key word 
 
 #### Daily Twitter Volume on Bitcoin Topic
 
-![twitter-Volume-daily](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-Volume-daily.png)
+![twitter-Volumedaily](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-daily.png)
 (Data source: Bloomberg L.P.-Twitter Volume-topic-Bitcoin)
 
 #### Weekly Twitter Volume on Bitcoin Topic
@@ -183,7 +183,6 @@ Matta, M., Lunesu, I., & Marchesi, M. (2015, June). Bitcoin Spread Prediction Us
 Ranco, G., Aleksovski, D., Caldarelli, G., Grčar, M., & Mozetič, I. (2015). The effects of Twitter sentiment on stock price returns. PloS one, 10(9), e0138441.
 
 Shi, L., Agarwal, N., Agrawal, A., Garg, R., & Spoelstra, J. (2012). Predicting US primary elections with Twitter. Retrieved from:  http://snap. stanford. edu/social2012/papers/shi. pdf.
-
 
 
 
