@@ -62,7 +62,7 @@ The Twitter Volume index is accessed from Bloomberg in topic search by key word 
 
 #### Weekly Twitter Volume on Bitcoin Topic
 
-![twitter-Volume-weekly](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-Volume-weekly.png)
+![twitter-Volumeweekly](https://github.com/Yeeejlin/PHBS_BlockChain_2018/blob/master/twitter-volume-weekly.png)
 (Data source: Bloomberg L.P.-Twitter Volume-topic-Bitcoin)
 
 ### 4.3 Google Trends
