@@ -168,6 +168,11 @@ Table 5 shows the result of heteroskedasticity test results on e. The p value of
 
 According to the result of White test in Table 6, p value of F-statistics and Chi-square statistics are larger than 0.05, which means the residual of our regression model obey the homoscedasticity. The result of Breusch-Pagan-Godfrey Test shows similar result. The p value of F-statistics and Chi-square statistics are all larger than 0.05, which is consistent with White test. It can be concluded that the residual of model (2) also follows the homoscedasticity. 
 
+## Conclusion
+
+In conclusion, this report finds the positive relationship between Bitcoin price and both the Twitter Volume and Google Trends in the long term, especially during the period when its price experienced the most volatile fluctuation from 2017 to 2018. Therefore, this report provides a valid and relatively accurate way for investors to properly predict Bitcoin price using network media trends indexes in the era of big data.
+
+
 
 
 
