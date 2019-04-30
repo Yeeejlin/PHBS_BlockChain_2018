@@ -172,7 +172,17 @@ According to the result of White test in Table 6, p value of F-statistics and Ch
 
 In conclusion, this report finds the positive relationship between Bitcoin price and both the Twitter Volume and Google Trends in the long term, especially during the period when its price experienced the most volatile fluctuation from 2017 to 2018. Therefore, this report provides a valid and relatively accurate way for investors to properly predict Bitcoin price using network media trends indexes in the era of big data.
 
+## References
 
+Dergiades, T., Mavragani, E., & Pan, B. (2018). Google Trends and tourists' arrivals: Emerging biases and proposed corrections. Tourism Management, 66, 108-120.
+
+Kristoufek, L. (2013). BitCoin meets Google Trends and Wikipedia: Quantifying the relationship between phenomena of the Internet era. Scientific reports, 3, 3415.
+
+Matta, M., Lunesu, I., & Marchesi, M. (2015, June). Bitcoin Spread Prediction Using Social and Web Search Media. In UMAP Workshops (pp. 1-10).
+
+Ranco, G., Aleksovski, D., Caldarelli, G., Grčar, M., & Mozetič, I. (2015). The effects of Twitter sentiment on stock price returns. PloS one, 10(9), e0138441.
+
+Shi, L., Agarwal, N., Agrawal, A., Garg, R., & Spoelstra, J. (2012). Predicting US primary elections with Twitter. Retrieved from:  http://snap. stanford. edu/social2012/papers/shi. pdf.
 
 
 
